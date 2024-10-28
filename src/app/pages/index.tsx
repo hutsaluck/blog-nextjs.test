@@ -1,4 +1,3 @@
-"use client";
 import { useEffect, useState } from 'react';
 import { Card, Button } from '@nextui-org/react';
 import { useRouter } from 'next/navigation';
@@ -30,6 +29,7 @@ export default function Home() {
                         <p>{post.body.substring(0, 100)}...</p>
                         <Button onClick={() => router.push(`/post/${post.id}`)}>Читати більше</Button>
                     </Card>
+
                 ))}
             </div>
         </div>
